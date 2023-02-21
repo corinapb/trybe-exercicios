@@ -1,10 +1,6 @@
 /* Crie uma variável chamada “currentHour” que receba um número entre 4 e 24, conforme sua escolha, para representar as horas do dia. */
 
-let currentHour = 6;
-
 /* Crie uma variável chamada “message” que inicialmente seja uma string vazia. */
-
-let message = '';
 
 /* Implemente as seguintes condicionais:
 
@@ -20,6 +16,10 @@ Se o horário estiver entre 4 e 11, insira “Hmmm, cheiro de café recém-passa
 
 Agora, imprima a variável message fora das suas condições. */
 
+let currentHour = 6;
+
+let message = '';
+
 if (currentHour >= 22) {
     message = 'Não deveríamos comer nada, é hora de dormir';
 } else if (currentHour >= 18) {
@@ -33,3 +33,19 @@ if (currentHour >= 22) {
 }
 
 console.log(message);
+
+/* Crie uma variável chamada “weekDay” que receba a string “quarta-feira”.
+
+Utilizando if/else, implemente as seguintes condicionais:
+
+Se a variável “weekDay” for “segunda-feira”, “terça-feira”, “quarta-feira”, “quinta-feira” ou “sexta-feira”, imprima “Oba, mais um dia de aprendizado na Trybe >:D”.
+
+Se a variável for algum dia de fim de semana, imprima “FINALMENTE, descanso merecido! UwU!”. */
+
+let weekDay = 'quarta-feira';
+
+if (weekDay === 'segunda-feira' || weekDay === 'terça-feira' || weekDay === 'quarta-feira' || weekDay === 'quinta-feira' || weekDay === 'sexta-feira') {
+    console.log('Oba, mais um dia de aprendizado na Trybe >:D');
+} else {
+    console.log('FINAMENTE, descanso merecido! UwU!');
+}
